@@ -1,0 +1,15 @@
+E:\visualstudio programs\client\client\bin\Debug\client.exe.config
+E:\visualstudio programs\client\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+E:\visualstudio programs\client\client\bin\Debug\client.exe
+E:\visualstudio programs\client\client\bin\Debug\client.pdb
+E:\visualstudio programs\client\client\obj\Debug\client.exe
+E:\visualstudio programs\client\client\obj\Debug\client.pdb
+C:\Users\Nour\Documents\Visual Studio 2015\Projects\client\client\bin\Debug\client.exe.config
+C:\Users\Nour\Documents\Visual Studio 2015\Projects\client\client\obj\Debug\client.exe
+C:\Users\Nour\Documents\Visual Studio 2015\Projects\client\client\obj\Debug\client.pdb
+C:\Users\Nour\Documents\Visual Studio 2015\Projects\client\client\bin\Debug\client.exe
+C:\Users\Nour\Documents\Visual Studio 2015\Projects\client\client\bin\Debug\client.pdb
+C:\Users\Nour\Documents\Visual Studio 2015\Projects\client\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+C:\Users\Nour\Documents\GitHubVisualStudio\UDP_PROJECT\client\client\bin\Debug\client.exe.config
+C:\Users\Nour\Documents\GitHubVisualStudio\UDP_PROJECT\client\client\obj\Debug\client.exe
+C:\Users\Nour\Documents\GitHubVisualStudio\UDP_PROJECT\client\client\obj\Debug\client.pdb
