@@ -14,6 +14,7 @@ namespace client
 
         static void Main(string[] args)
         {
+            /dfdfd
             byte[] data = new byte[1024];
             string input, stringData;
             int recv;
