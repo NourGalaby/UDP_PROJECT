@@ -7,3 +7,6 @@ c:\users\nour\documents\visual studio 2015\Projects\udp_server\udp_server\obj\De
 C:\Users\Nour\Documents\GitHubVisualStudio\UDP_PROJECT\udp_server\udp_server\bin\Debug\udp_server.exe.config
 C:\Users\Nour\Documents\GitHubVisualStudio\UDP_PROJECT\udp_server\udp_server\obj\Debug\udp_server.exe
 C:\Users\Nour\Documents\GitHubVisualStudio\UDP_PROJECT\udp_server\udp_server\obj\Debug\udp_server.pdb
+C:\Users\lenovo\Source\Repos\UDP_PROJECT\udp_server\udp_server\bin\Debug\udp_server.exe.config
+C:\Users\lenovo\Source\Repos\UDP_PROJECT\udp_server\udp_server\obj\Debug\udp_server.exe
+C:\Users\lenovo\Source\Repos\UDP_PROJECT\udp_server\udp_server\obj\Debug\udp_server.pdb

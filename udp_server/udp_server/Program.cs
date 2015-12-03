@@ -12,7 +12,7 @@ namespace server
     {
         static void Main(string[] args)
         {
-
+            //rrrr
             int x;
             int recv;
             byte[] data = new byte[1024];

@@ -13,3 +13,6 @@ C:\Users\Nour\Documents\Visual Studio 2015\Projects\client\client\obj\Debug\clie
 C:\Users\Nour\Documents\GitHubVisualStudio\UDP_PROJECT\client\client\bin\Debug\client.exe.config
 C:\Users\Nour\Documents\GitHubVisualStudio\UDP_PROJECT\client\client\obj\Debug\client.exe
 C:\Users\Nour\Documents\GitHubVisualStudio\UDP_PROJECT\client\client\obj\Debug\client.pdb
+C:\Users\lenovo\Source\Repos\UDP_PROJECT\client\client\bin\Debug\client.exe.config
+C:\Users\lenovo\Source\Repos\UDP_PROJECT\client\client\obj\Debug\client.exe
+C:\Users\lenovo\Source\Repos\UDP_PROJECT\client\client\obj\Debug\client.pdb
