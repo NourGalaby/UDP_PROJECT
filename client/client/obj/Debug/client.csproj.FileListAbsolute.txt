@@ -16,3 +16,11 @@ C:\Users\Nour\Documents\GitHubVisualStudio\UDP_PROJECT\client\client\obj\Debug\c
 C:\Users\lenovo\Source\Repos\UDP_PROJECT\client\client\bin\Debug\client.exe.config
 C:\Users\lenovo\Source\Repos\UDP_PROJECT\client\client\obj\Debug\client.exe
 C:\Users\lenovo\Source\Repos\UDP_PROJECT\client\client\obj\Debug\client.pdb
+C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\client\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\client\client\bin\Debug\client.exe.config
+C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\client\client\bin\Debug\client.exe
+C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\client\client\bin\Debug\client.pdb
+C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\client\client\bin\Debug\mymessage.dll
+C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\client\client\bin\Debug\mymessage.pdb
+C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\client\client\obj\Debug\client.exe
+C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\client\client\obj\Debug\client.pdb

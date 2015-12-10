@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using MyRefrence;
 namespace server
 {
     class Program
     {
+
+       
+
         static void Main(string[] args)
         {
             //rrrr
@@ -17,6 +22,7 @@ namespace server
             int recv;
             byte[] data = new byte[1024];
 
+            myMessage msg_recv=null;
             //LISTEN TO ANY ip on port 950
             IPEndPoint endpoint = new IPEndPoint(IPAddress.Any, 950);
             Socket newsocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
@@ -31,8 +37,18 @@ namespace server
             //WAIT FOR CLIENT TO SEND DATA
             recv = newsocket.ReceiveFrom(data, ref Remote);
 
+          
+            Console.WriteLine("avalaible: " + newsocket.Available);
+            Console.WriteLine("received: " + Encoding.ASCII.GetString(data));
+
+            using (var mystream = new MemoryStream(data))
+            {
+               var bf = new BinaryFormatter();
+              msg_recv = (myMessage)bf.Deserialize(mystream);
+            }
+
             Console.WriteLine("Message received from {0}:", Remote.ToString());
-            Console.WriteLine(Encoding.ASCII.GetString(data, 0, recv));
+            Console.WriteLine(msg_recv.asd + " seq_no: " + msg_recv.seq_no);
 
             string welcome = "Welcome to my test server";
             Console.WriteLine(welcome);
