@@ -15,6 +15,5 @@ C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\udp_server\udp_ser
 C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\udp_server\udp_server\obj\Debug\udp_server.pdb
 C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\udp_server\udp_server\bin\Debug\udp_server.exe
 C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\udp_server\udp_server\bin\Debug\udp_server.pdb
-C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\udp_server\udp_server\obj\Debug\udp_server.csprojResolveAssemblyReference.cache
 C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\udp_server\udp_server\bin\Debug\mymessage.dll
 C:\Users\Nour\Documents\Visual Studio 2013\source\udp_project\udp_server\udp_server\bin\Debug\mymessage.pdb

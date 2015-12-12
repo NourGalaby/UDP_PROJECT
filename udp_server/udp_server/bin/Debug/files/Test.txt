@@ -1,0 +1,101 @@
+
+Abc D E F G as asd asd asd asd asd hgjf hxzv sdv AFAbc D E F G as asd asd asd asd asd hgjf hxzv sdv AFAbc D E F G sdad aasdsd hgjf hxzv sdv AFAbc D E F G as asd asd asd asd asd hgjf hxzv sdv AFAbc D E F G as asd asd asd asd asd hgjfasdhxzv sdv AFAbc D E F G as asd asd asd asd asd hgjf hxzv sdv AFAbc DasdG as asd asd asd asd asd hgjf hxzv sdv AFAbc D E F G as asd asd asd asd asd hgjf hxzv sdv AFAbc D E F G as asd asd asd asd asd hgjf hxzv sdv AFAbc D E F G as asd asd asd asd asd hgjf hxzv sdv AFsd
+How to: Execute Cleanup Code Using finally
+How to: Catch a non-CLS Exception
+Creating and Throwing Exceptions (C# Programming Guide)
+
+Visual Studio 2015 Other Versions 
+ 
+Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then thrown with the throw keyword. The runtime then searches for the most compatible exception handler.
+Programmers should throw exceptions when one or more of the following conditions are true:
+The method cannot complete its defined functionality.
+For example, if a parameter to a method has an invalid value:
+C#
+static void CopyObject(SampleClass original)
+{
+    if (original == null)
+    {
+        throw new System.ArgumentException("Parameter cannot be null", "original");
+    }
+
+}
+An inappropriate call to an object is made, based on the object state.
+One example might be trying to write to a read-only file. In cases where an object state does not allow an operation, throw an instance of InvalidOperationException or an object based on a derivation of this class. This is an example of a method that throws an InvalidOperationException object:
+C#
+class ProgramLog
+{
+    System.IO.FileStream logFile = null;
+    void OpenLog(System.IO.FileInfo fileName, System.IO.FileMode mode) {}
+
+    void WriteLog()
+    {
+        if (!this.logFile.CanWrite)
+        {
+            throw new System.InvalidOperationException("Logfile cannot be read-only");
+        }
+        // Else write data to the log and return.
+    }
+}
+When an argument to a method causes an exception.
+In this case, the original exception should be caught and an ArgumentException instance should be created. The original exception should be passed to the constructor of the ArgumentException as the InnerException parameter:
+C#
+static int GetValueFromArray(int[] array, int index)
+{
+    try
+    {
+        return array[index];
+    }
+    catch (System.IndexOutOfRangeException ex)
+    {
+        System.ArgumentException argEx = new System.ArgumentException("Index is out of range", "index", ex);
+        throw argEx;
+    }
+}
+Exceptions contain a property named StackTrace. This string contains the name of the methods on the current call stack, together with the file name and line number where the exception was thrown for each method. A StackTrace object is created automatically by the common language runtime (CLR) from the point of the throw statement, so that exceptions must be thrown from the point where the stack trace should begin.
+All exceptions contain a property named Message. This string should be set to explain the reason for the exception. Note that information that is sensitive to security should not be put in the message text. In addition to Message, ArgumentException contains a property named ParamName that should be set to the name of the argument that caused the exception to be thrown. In the case of a property setter, ParamName should be set to value.
+Public and protected methods members should throw exceptions whenever they cannot complete their intended functions. The exception class that is thrown should be the most specific exception available that fits the error conditions. These exceptions should be documented as part of the class functionality, and derived classes or updates to the original class should retain the same behavior for backward compatibility.
+Things to Avoid When Throwing Exceptions
+The following list identifies practices to avoid when throwing exceptions:
+Exceptions should not be used to change the flow of a program as part of ordinary execution. Exceptions should only be used to report and handle error conditions.
+Exceptions should not be returned as a return value or parameter instead of being thrown.
+Do not throw System.Exception, System.SystemException, System.NullReferenceException, or System.IndexOutOfRangeException intentionally from your own source code.
+Do not create exceptions that can be thrown in debug mode but not release mode. To identify run-time errors during the development phase, use Debug Assert instead.
+Defining Exception Classes
+Programs can throw a predefined exception class in the System namespace (except where previously noted), or create their own exception classes by deriving from Exception. The derived classes should define at least four constructors: one default constructor, one that sets the message property, and one that sets both the Message and InnerException properties. The fourth constructor is used to serialize the exception. New exception classes should be serializable. For example:
+C#
+[Serializable()]
+public class InvalidDepartmentException : System.Exception
+{
+    public InvalidDepartmentException() : base() { }
+    public InvalidDepartmentException(string message) : base(message) { }
+    public InvalidDepartmentException(string message, System.Exception inner) : base(message, inner) { }
+
+    // A constructor is needed for serialization when an
+    // exception propagates from a remoting server to the client. 
+    protected InvalidDepartmentException(System.Runtime.Serialization.SerializationInfo info,
+        System.Runtime.Serialization.StreamingContext context) { }
+}
+New properties should only be added to the exception class when the data they provide is useful to resolving the exception. If new properties are added to the derived exception class, ToString() should be overridden to return the added information.
+C# Language Specification
+For more information, see the C# Language Specification. The language specification is the definitive source for C# syntax and usage.
+See Also
+C# Programming Guide
+Exceptions and Exception Handling (C# Programming Guide)
+Exception Hierarchy
+Exception Handling (C# Programming Guide)
+Any suggestions?
+Print
+Export (0)
+Share
+IN THIS ARTICLE
+Things to Avoid When Throwing Exceptions
+Defining Exception Classes
+C# Language Specification
+See Also
+Was this page helpful?  Yes  No
+Dev centers
+Windows
+Office
+Visual Studio
+Microsoft Azure
+More...
